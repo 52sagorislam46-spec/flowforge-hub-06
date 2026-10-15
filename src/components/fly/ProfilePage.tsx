@@ -59,6 +59,7 @@ export function ProfilePage({
   const [showMonetization, setShowMonetization] = useState(false);
   const { dark, toggle: toggleDark } = useDarkMode();
   const [showLanguage, setShowLanguage] = useState(false);
+  const [showSettingsMenu, setShowSettingsMenu] = useState(false);
   useBackClose(showNotifySettings, () => setShowNotifySettings(false));
   useBackClose(showEditProfile, () => setShowEditProfile(false));
   useBackClose(showEditPage, () => setShowEditPage(false));
@@ -424,13 +425,24 @@ export function ProfilePage({
                 <Sprout size={20} className="text-gray-500" />
                 <span className="text-sm font-medium">Fly Agro — কৃষকের বন্ধু</span>
               </a>
-              <a
-                href="/study"
+              <button
+                onClick={() => setShowSettingsMenu((v) => !v)}
                 className="w-full flex items-center gap-3 px-3 py-3 rounded-xl text-left text-gray-800 hover:bg-gray-50"
               >
                 <GraduationCap size={20} className="text-gray-500" />
                 <span className="text-sm font-medium">Settings</span>
-              </a>
+              </button>
+              {showSettingsMenu && (
+                <div className="mx-3 mb-1 rounded-xl border border-gray-100 overflow-hidden">
+                  <a
+                    href="/study"
+                    className="w-full flex items-center gap-3 px-3 py-3 text-left text-gray-800 hover:bg-gray-50"
+                  >
+                    <Swords size={18} className="text-gray-500" />
+                    <span className="text-sm font-medium">Fly Arena</span>
+                  </a>
+                </div>
+              )}
               <button
                 onClick={() => {
                   setShowMenu(false);
