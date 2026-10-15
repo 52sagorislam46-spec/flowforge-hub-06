@@ -23,7 +23,7 @@ import { BoostRequestsPage } from "./BoostRequestsPage";
 import { MonetizationPanel } from "./MonetizationPanel";
 import { BadgeDollarSign } from "lucide-react";
 import { Rocket } from "lucide-react";
-import { Wallet, Crown, Sprout, Bot, LifeBuoy } from "lucide-react";
+import { Wallet, Crown, Sprout, Bot, LifeBuoy, Swords } from "lucide-react";
 import { isVipOf, VIP_DAYS, vipFeeOf, subscribeVip, INSUFFICIENT_MSG, VIP_MIN_FEE, VIP_MAX_FEE, VIP_FEE_PLANS, hasFeeAccess, buyFeePlan } from "./vip";
 import { useDarkMode } from "./theme";
 import { isAdmin } from "./admins";
