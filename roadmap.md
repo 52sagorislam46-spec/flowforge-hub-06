@@ -1,0 +1,16 @@
+# Roadmap
+- [x] 1:1 call ringtone (audio + video)
+- [x] Call connection: ICE servers loaded from server, hangup ends both sides
+- [x] TURN relay (Metered fly.metered.live built in)
+- [x] Group call: ring all members, live "Join Call", history after end
+- [x] Voice messages + mic permission
+- [ ] Android app native mic permission / back key mapping — native app code not in this repo
+- [x] Inbox scrolling
+- [x] Fly AI (answers, image generation, admin Sagor Islam contact)
+- [x] Back button from help center + chat
+- [x] Push notifications: VAPID key added
+- [x] Fly AI: voice, gallery/camera photo, copy/edit/delete, selectable text
+- [x] Fly Agro: follow-up chat, voice, sources & confident diagnosis
+- [x] Fly Agro: exact counting from photo
+- [x] Story: online song search & picker
+- [x] Story: stickers (drag) & photo filters
